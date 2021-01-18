@@ -21,7 +21,7 @@ class Emoji extends Command {
     const match = args[0].match(/<:[a-zA-Z0-9_-]+:(\d{18})>/);
     if (!match || !match[1]) return message.reply('You must provide a valid emoji, from a server I am on.');
 
-    const emoji = this.client.emojis.get(match[1]);
+    const emoji = this.client.emoji.get(match[1]);
     if (!emoji) return message.reply('You must provide a valid emoji, from a server I am on.');
 
     const embed = new MessageEmbed()

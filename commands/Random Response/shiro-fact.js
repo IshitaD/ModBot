@@ -1,5 +1,5 @@
 const Command = require("../../base/Command.js");
-const facts = require('../../assets/json/shiro-fact');
+const facts = require('../../assets/json/shiro.json');
 
 class ShiroFact extends Command {
   constructor(client) {

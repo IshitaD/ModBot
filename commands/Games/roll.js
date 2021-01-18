@@ -46,6 +46,6 @@ class Roll extends Command {
       });
     }
   };
-}
+
 
 module.exports = Roll;

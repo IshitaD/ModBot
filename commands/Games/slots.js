@@ -47,6 +47,6 @@ class Slots extends Command {
       await message.channel.send({ embed });
     }
   };
-}
+
 
 module.exports = Slots;

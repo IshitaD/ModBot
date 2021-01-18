@@ -43,6 +43,6 @@ class Flip extends Command {
       });
     }
   };
-}
+
 
 module.exports = Flip;
