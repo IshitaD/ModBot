@@ -1,4 +1,5 @@
 const Command = require('../../base/Command.js');
+const prefix = require('../../process.env')
 
 class Prefix extends Command {
   constructor(client) {
@@ -12,7 +13,13 @@ class Prefix extends Command {
   }
 
   async run(message, settings) { 
-    message.channel.send(`My prefix here on ${message.guild.name} is "**${settings.prefix}**".\nTo change my prefix, do \`${settings.prefix}set edit prefix <New Prefix>\`.`);
+    message.channel.send ({
+      embed: {
+        color: 'RANDOM',
+        description: `Current prefix is ${settings.Prefix}`
+      }
+    })
+   
   }
 }
 
